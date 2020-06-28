@@ -41,5 +41,84 @@
 		  "} "
 		],
 		"description": "function"
+	  },
+	  "New Line": {
+		"prefix": "new_line",
+		"body": [
+		  "cout << ${\"\"} << ${endl};"
+		],
+		"description": "New Line"
+	  },
+	  "Comment": { 
+		"prefix": "comment",
+		"body": [
+		  "//"
+		],
+		"description": "Comment"
+	  },
+	  "Multi-line Comment": {
+		"prefix": "multi-line_comment",
+		"body": [
+		  "/*" , "$0" ,"*/"
+		],
+		"description": "Multi-line Comment"
+	  },
+	  "if": {
+		"prefix": "if",
+		"body": [
+		  "if(${condition})",
+		  "{",
+		  "  $0",
+		  "}"
+		],
+		"description": "if"
+	  },
+	  "if-else": {
+		"prefix": "if-else",
+		"body": [
+		  "if(${condition})",
+		  "{",
+		  "  ${if_case}",
+		  "}",
+		  "else",
+		  "{",
+		  "  ${else_case}",
+		  "}"
+		],
+		"description": "if-else"
+	  },
+	  "elif": {
+		"prefix": "elif",
+		"body": [
+		  "else if(${condition})",
+		  "{",
+		  "  $0",
+		  "}"
+		],
+		"description": "elif"
+	  },
+	  "switch": {
+		"prefix": "switch",
+		"body": [
+		  "switch(${expression})",
+		  "{",
+		  "$0",
+		  "}",
+		  ""
+		],
+		"description": "switch"
+	  },
+	  "case": {
+		"prefix": "case",
+		"body": [
+		  "case $1 :",
+		  "$0",
+		  "break;"
+		],
+		"description": "case"
 	  }
+	  
+	 
+
+
 }
