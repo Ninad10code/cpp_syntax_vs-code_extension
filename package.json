@@ -7,7 +7,8 @@
 		"vscode": "^1.46.0"
 	},
 	"categories": [
-		"Other"
+		"Other",
+		"Snippets"
 	],
 	"activationEvents": [
 		"onCommand:cppsyntax.helloWorld"
@@ -17,7 +18,13 @@
 		"commands": [
 			{
 				"command": "cppsyntax.helloWorld",
-				"title": "Hello World"
+				"title": "Cpp Syntax"
+			}
+		],
+		"snippets":[
+			{
+				"language": "cpp",
+				"path": "./snippets.json"
 			}
 		]
 	},
