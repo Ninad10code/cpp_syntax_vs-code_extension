@@ -1,0 +1,45 @@
+{
+	
+
+	"print":{
+		"prefix":"print",
+		"body":[
+			"cout<<\"${input}\"<<endl;",
+				"$0"
+		],
+		"description":"console out to terminal"
+	},
+
+	"for loop": {
+		"prefix": "forloop",
+		"body": [
+		  "for(${type} ${variabl}=0; ${variabl} < ${length}; ${variabl}++)",
+		  "{",
+		  "  $0",
+		  "}"
+		],
+		"description": "for loop"
+	  },
+
+	  "while loop": {
+		"prefix": "whileloop",
+		"body": [
+		  "while(${condition})",
+		  "{",
+		  "  $0",
+		  "}"
+		],
+		"description": "while loop"
+	  },
+
+	  "function": {
+		"prefix": "def_function",
+		"body": [
+		  " ${function_type} ${function_name} (${parameters})",
+		  "{",
+		  "  $0",
+		  "} "
+		],
+		"description": "function"
+	  }
+}
